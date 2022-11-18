@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import './Favorites.css';
 
-import { removeMovieFavourite } from '../../actions/index'
+import { removeMovieFavourite } from '../../redux/actions/index'
 
 export class ConnectedList extends Component {
   render() {

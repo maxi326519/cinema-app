@@ -1,12 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { getMovieDetail } from '../../actions/index';
+import { getMovieDetail } from '../../redux/actions/index';
 
 import './Movie.css';
 
 class Movie extends React.Component {
-
-
 
     render() {
         return (

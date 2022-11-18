@@ -3,8 +3,7 @@ import { connect } from "react-redux";
 import { Link } from 'react-router-dom';
 import './Buscador.css';
 
-import { getMovies, addMovieFavourite } from '../../actions'
-
+import { getMovies, addMovieFavourite } from '../../redux/actions'
 
 export class Buscador extends Component {
   constructor(props) {

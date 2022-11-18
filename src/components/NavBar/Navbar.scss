@@ -1,0 +1,66 @@
+@use "../Others/styles/var.scss";
+
+.navbar {
+  height: 50px;
+  width: 100%;
+
+  .navbar-container{
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    height: 100%;
+
+    .navbar-logo{
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        img{
+            width: 30px;
+            height: 30px;
+        }
+        p{
+            padding: 0 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: var.$light-font;
+        }
+    }
+
+    nav .list{
+        height: 50px;
+        margin: 0;
+        padding: 0;
+
+        .list-item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+
+            a{
+                padding: 10px 20px;
+                border-radius: 20px;
+                text-decoration: none;
+                &:hover{
+                    background-color: #0004;
+                    color: var.$primary-color;
+                }
+                &:active{
+                    background-color: #0006;
+                }
+            }
+        }
+    }
+  }
+}
+
+.nav-light {
+  background-color: var.$light-back-2;
+  a {
+    color: var.$light-font;
+  }
+}
+
+.nav-dark {
+  background-color: var.$dark-back-2;
+}
